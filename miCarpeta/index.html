@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELO PARCIAL LAB III</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="lds-spinner loader" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+    <div id="contenedor">
+        <button onclick="traePersonas()" id="traerPersonas">TRAER TABLA</button>
+    </div>
+
+
+    <!-- // id="txtFecha" -->
+    <div class="contenedor" id="popup">
+
+        <div id="cerrar" onclick="cerrarPopUp()">
+            <img src="./assets/error.png" alt="botonErr" srcset="">
+        </div>
+        <div id="contenidoPopUp">
+
+            <input type="text" id="txtID" hidden></br>
+            <label for="">Nombre</label></br>
+            <input type="text" id="txtNombre"></br>
+            <label for="">Apellido</label></br>
+            <input type="text" id="txtApellido"></br>
+            <label for="">Sexo</label></br>
+            <input type="radio" id="txtSexoH" value="Hombre" name="sexo">Hombre
+            <input type="radio" id="txtSexoM" value="Mujer" name="sexo">Mujer</br>
+            <label for="">Localidad</label></br>
+            <select name = "localidades" id="txtFecha">
+            </select>
+            </br></br>
+            
+            <!-- <button id="eliminar">ELIMINAR</button> -->
+            <button id="modificar">MODIFICAR</button>
+        </div>
+
+    </div>
+
+    <div id="tablaNueva">
+
+
+    </div>
+
+
+
+</body>
+
+</html>
